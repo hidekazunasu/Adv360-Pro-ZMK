@@ -1,7 +1,15 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
+ */
+
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
  */
 
 #include <behaviors.dtsi>
@@ -24,96 +32,19 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-
-    us_2_at: us_2_at {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_2_AT";
-        #binding-cells = <0>;
-        bindings = <&kp N2>, <&kp LS(LBKT)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_6_caret: us_6_caret {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_6_CARET";
-        #binding-cells = <0>;
-        bindings = <&kp N6>, <&kp EQUAL>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_7_ampersand: us_7_ampersand {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_7_AMPERSAND";
-        #binding-cells = <0>;
-        bindings = <&kp N7>, <&kp N6>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_8_asterisk: us_8_asterisk {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_8_ASTERISK";
-        #binding-cells = <0>;
-        bindings = <&kp N8>, <&kp BSLH>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_9_paren: us_9_paren {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_9_PAREN";
-        #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp N8>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_0_paren: us_0_paren {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_0_PAREN";
-        #binding-cells = <0>;
-        bindings = <&kp N0>, <&kp N9>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_minus_underscore: us_minus_underscore {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_MINUS_UNDERSCORE";
-        #binding-cells = <0>;
-        bindings = <&kp MINUS>, <&kp INT1>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_equal_plus: us_equal_plus {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_EQUAL_PLUS";
-        #binding-cells = <0>;
-        bindings = <&kp EQUAL>, <&kp SEMI>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_lbkt_brace: us_lbkt_brace {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_LBKT_BRACE";
-        #binding-cells = <0>;
-        bindings = <&kp LBKT>, <&kp RBKT>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_rbkt_brace: us_rbkt_brace {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_RBKT_BRACE";
-        #binding-cells = <0>;
-        bindings = <&kp RBKT>, <&kp BSLH>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    us_bslh_pipe: us_bslh_pipe {
-        compatible = "zmk,behavior-mod-morph";
-        label = "US_BSLH_PIPE";
-        #binding-cells = <0>;
-        bindings = <&kp INT1>, <&kp PIPE>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
   };
 
     keymap {
         compatible = "zmk,keymap";
 
+
         default_layer {
             bindings = <
- &us_equal_plus &kp N1    &us_2_at    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &us_6_caret  &us_7_ampersand &us_8_asterisk &us_9_paren &us_0_paren &us_minus_underscore
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P    &us_lbkt_brace
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0   &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P    &kp BSLH
  &kp LCTRL      &kp A     &kp S     &kp D      &kp F   &kp G               &none    &kp ESC  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI     &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp DELETE
-     &mo 2  &us_bslh_pipe  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp SPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp ENTER          &kp UP   &kp DOWN  &us_lbkt_brace  &us_rbkt_brace       &mo 2
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp SPACE   &kp END                  &kp PG_DN  &kp ENTER  &kp ENTER          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT       &mo 2
             >;
         };
 
